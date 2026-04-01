@@ -12,7 +12,7 @@ from torch.utils.data import DataLoader, sampler
 import torch.nn as nn
 
 import warning 
-warnings.filterwarning('ignore', category=FutureWarning)
+
 
 
 #data science librarie and functionalities
@@ -30,10 +30,12 @@ from timeit import default_timer as timer
 
 #displaying figures
 import matplotlib.pyplot as plt
+
+import os
+warnings.filterwarning('ignore', category=FutureWarning)w
 %matplotlib inline
 plt.rcParams['font-size'] = 14
 
 InteractiveShell.ast_node_interactivity = 'all'
-
-import os
 print(os.listdir("../input"))
+
